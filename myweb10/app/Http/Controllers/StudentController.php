@@ -6,12 +6,9 @@ use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
-    public function index()
+    public function displayStudent()
     {
-        $students = [
-            ['id' => 1, 'name' => 'Ninh Phương Mai', 'age' => 20],
-            ['id' => 2, 'name' => 'Mai Phương Ninh', 'age' => 21]
-        ];
+        $students = Student::All();
 
         return view('Student', compact('students'));
     }
