@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\StudentModel; // ✅ import đúng model bạn tạo
+use App\Models\StudentModel;
 
 class StudentSeeder extends Seeder
 {
