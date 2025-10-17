@@ -12,11 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('students', function (Blueprint $table) {
-            $table->id();              // cột khóa chính (tự tăng)
-            $table->string('name');    // tên học sinh
-            $table->integer('age');    // tuổi
-            $table->string('class');   // lớp học
-            $table->timestamps();      // created_at & updated_at
+            $table->id();
+            $table->string('name');
+            $table->integer('age');
+            $table->string('class');
+            $table->timestamps();
         });
     }
 
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('students'); // 🟢 nên thêm dòng này
+        Schema::dropIfExists('students');
     }
 };
